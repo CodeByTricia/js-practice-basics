@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- HTML -->
+  <p id="message">Hello, Player!</p>
+  <input type="text" id="textBox" placeholder="Wonder Boy">
+  <button id="textButton" onclick="playerGreeting()">Submit</button>
+  
+
+  <script>
+    
+    function playerGreeting(){
+      const textBox = document.getElementById('textBox');
+      const playerName = textBox.value;
+
+      document.getElementById('message').innerText = `Hello, ${playerName}!`;
+
+    }
+
+  </script>
+
+</body>
+</html>
